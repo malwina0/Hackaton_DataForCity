@@ -1,0 +1,45 @@
+.homepage-container {
+    width: 80%;
+    margin: auto;
+}
+
+.homepage {
+    display: block;
+
+    text-align: justify;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 0;
+    text-justify: inter-word;
+}
+
+.homepage h2, h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homepage h4{
+    margin-top: 3em;
+    margin-bottom: 0.5em;
+}
+
+.homepage div{
+    width: 60%;
+    margin: auto;
+    background-color: #5465FF;
+    color: white;
+    padding: 1.5em;
+    font-size: larger;
+}
+
+.homepage .authors{
+    width: 40%;
+    margin: auto;
+    background-color: #5465FF;
+    color: white;
+    padding: 1em;
+    margin-bottom: 1em;
+    font-size: medium;
+    text-align: center;
+}
