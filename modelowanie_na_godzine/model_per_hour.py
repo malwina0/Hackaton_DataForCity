@@ -60,7 +60,7 @@ def split_data(df: pd.DataFrame):
 
 
 def create_model(X, y):
-    rf = MultiOutputRegressor(RandomForestRegressor(n_estimators=10, random_state=42))
+    rf = MultiOutputRegressor(RandomForestRegressor(n_estimators=10, random_state=43))
     rf.fit(X, y)
     return rf
 
@@ -189,9 +189,11 @@ def print_mean_values(predicted: list, df_test: pd.DataFrame) -> pd.DataFrame:
         res_df = pd.DataFrame(data=res_dict, index=[i])
         pred_res = pd.concat([pred_res, res_df])
         i += 1
-    print('Mean averages for predicted values:', pred_res['PM10_avg'].mean(), pred_res['PM2.5_avg'].mean(), pred_res['PM1_avg'].mean(),
+    print('Mean averages for predicted values: PM10: ', pred_res['PM10_avg'].mean(), 'PM2.5',
+          pred_res['PM2.5_avg'].mean(), 'PM1', pred_res['PM1_avg'].mean(), 'NO2',
           pred_res['NO2_avg'].mean())
-    print('Mean averages for real values:', df_test['PM10_avg'].mean(), df_test['PM2.5_avg'].mean(), df_test['PM1_avg'].mean(), df_test['NO2_avg'].mean())
+    print('Mean averages for real values: PM10: ', df_test['PM10_avg'].mean(), 'PM2.5', df_test['PM2.5_avg'].mean(),
+          'PM1', df_test['PM1_avg'].mean(), 'NO2', df_test['NO2_avg'].mean())
     return pred_res
 
 
