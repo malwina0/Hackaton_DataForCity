@@ -1,0 +1,40 @@
+.prediction-container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.smog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 0;
+}
+
+.forecast-cell {
+    background-color: #5465FF;
+    color: white;
+    font-size: larger;
+    width: 18em;
+    height: 14em;
+    text-align: center;
+    align-items: center;
+    margin: 1em;
+
+}
+
+.prediction-wrapper {
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.prediction-icon {
+    height: 6em;
+    width: 6em;
+}
